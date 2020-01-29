@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Mzamomtsha Primary School</title>
+    <!--CSS document is linked using the code below.-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--The Body begins here-->
+<body class="body">
+    <!--This is the first div box containing the school's motto, name and logo.-->
+    <div class="head-container">
+        <!--A div box is created to group the school's name and logo.-->
+        <div class="name_logo">
+            <h1>Mzamomtsha<br>Primary School</h1>
+            <img src="school_logo.png" alt="School Logo" height="100px" weight="100px">
+        </div>
+        <div class="motto">
+            <h2 class="motto"><marquee direction="left">"Growing our community together!"</marquee></h2>
+        </div>
+        <br>
+    </div>
+
+    <!--This is the second div box and it contains the links on top of the website.-->
+    <div class="links-container">
+        <div class="home"><a href="Main Page.html">Home</a></div>
+        <div class="about-us-link"><a href="About Us.html">About Us</a></div>
+        <div class="events"><a href="Events.html">Events</a></div>
+        <br>
+    </div>
+
+    <div class="about-us">
+        <!--THE PARAGRAPHS BELOW ARE THE SCHOOL'S VISION AND MISSION.-->
+        <div class="vision-mission">
+            <p style="font-size:large">Our <strong>vision</strong> at Mzamomtsha Primary School is to empower students to acquire, demonstrate,
+                articulate and value knowledge and skills that will support them, as life-long learners, to
+                participate in and contribute to the global world and practice the <strong>core values</strong> of the school: <br>
+                <strong>Respect, Tolerance & Inclusion, and Excellence</strong>.</p>
+
+            <p style="font-size:large">Our <strong>mission</strong> is to develop students with active and creative minds, a sense of understanding
+                and compassion for others, and the courage to act on their beliefs. We stress the <strong>total
+                development</strong> of each child: <strong>Spiritually, Morally, Intellectually, Socially, Emotionally, and Physically</strong>.</p>
+        </div>
+
+        <!--THE SLIDESHOW BELOW ILLUSTRATES PICTURES OF THE SCHOOL'S BUILDING.-->
+        <div class="slideshow-container">
+            <br>
+            <!--EACH PICTURE HAS ITS OWN DIV BOX.-->
+            <div class="mySlides fade">
+                <div class="number-text">1 / 5</div>
+                <img src="mzamomtsha1.jpg" width="600px" height="300px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">2 / 5</div>
+                <img src="SAOTA_ZA_Mzamomtsha_2_.jpg" width="600px" height="300px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">3 / 5</div>
+                <img src="mzamomtsha2.jpg" width="600px" height="300px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">4 / 5</div>
+                <img src="mzamomtsha3.jpg" width="600px" height="300px">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="number-text">5 / 5</div>
+                <img src="SAOTA_ZA_Mzamomtsha_4_.jpg" width="600px" height="300px">
+            </div>
+
+            <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!--THE CODE BELOW IS THE JAVASCRIPT CODE THAT ENHANCES THE DISPLAY OF THE SLIDESHOW.-->
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+        </div>
+    </div>
+
+    <!--THE SCHOOL'S BIOGRAPHY FOLLOWS AFTER THE VISION, MISSION & SLIDESHOW DIV.-->
+    <div class="biography-heading">
+        <h1>Biography of Mzamomtsha Primary School</h1>
+    </div>
+
+    <p style="font-size: large;">Mzamomtsha Primary School is located between Khayelistha Township and uMfuleni Township in the Western Cape Province of the Republic of South Africa.
+    The school's headmaster, Mr. Simphiwe Khuze, joined in 2007. The school is located in a semi-township called Drift Sands which started off as an informal settlement.
+    Drift Sands has since been developed and with support from the South African government it turned into a sprawling township with state of the art housing units.
+    Mzamomtsha Primary School is plays a key role in Drift Sands and is supporting the local community. The school was initially created for primary school students from
+    Grade 1 to Grade 7, but due to the rapid population growth (births and migration) the school is also enrolling higher grades. Students are allowed up to Grade 12 -
+    which is the Matric year. Mzamomtsha School in the remote township of Driftsands has a severe shortage of classrooms and chairs. This follows an early 2018 instruction
+    from the district office for the school to accommodate children who could not fit into overcrowded Mfuleni schools. The Department of Education promised the school mobile
+    classes to help handle the increased learner population, but these have still had not been delivered. Parents organised a protest to highlight the school’s needs, but
+    nothing has changed. Frustrations are growing, and parents are even contemplating closing down the school permanently as they feel the learning conditions their children
+    are enduring are unacceptable.</p>
+
+    <!--THE PRINCIPAL'S BIOGRAPHY BEGINS BELOW UNDER THE SCHOOL'S BIOGRAPHY DIV.-->
+    <!--THE HEADING IS CONTAINED IN ITS OWN DIV IN ORDER TO STYLE IT SEPARATELY FROM THE REST OF THE CONTENT BELOW IT.-->
+    <div class="biography-heading">
+        <h1>The Principal of Mzamomtsha Primary School</h1>
+    </div>
+
+    <!--THE DIV BOX BELOW CONTAINS A PICTURE OF THE PRINCIPAL AND HIS BIOGRAPHY.-->
+    <div class="principal">
+        <div class="Picture-name">
+            <img src="mzamo-principal.jpg" width="350px" height="400px">
+        </div>
+        
+        <p style="font-size:large">Simphiwe Khuze is a <strong>UWC Graduate</strong> who obtained <strong>3 Qualifications</strong> at the University. He studied <strong>Bachelor of Arts (BA)(1990-1992)</strong>,
+        <strong>Higher Diploma in Education (1993-1993)</strong> and <strong>Bachelor of Education (199-1994)</strong>. He started teaching at Mfuleni Combined School as a Teacher
+        (Mar 1994-Apr 1998), he then moved to Manzomthombo SSS in Apr 1998 and left the school in Dec 2000. In Nov 2001, he started marking <strong>NSC
+        History Papers</strong>, became the Chief Marker and Internal Moderator. He then went back to the school as <strong>Head of Department</strong> for 2 years. In
+        Apr 2004, he became the <strong>Deputy Principal of Manzomthombo SSS</strong>, he resigned in Dec 2017 after being offered to be the Principal of Mzamomtsha
+        Primary School. He started at <strong>Mzamomtsha in Jan 2018</strong>, and has been doing a good job in changing the school around.
+        </p>
+    </div>
+    <br><br>
+
+    <!--This is where the footer starts.-->
+    <footer>
+        <div class="footer-div">
+            <!--Left-hand div box.-->
+            <div class="copyright">
+                <strong>
+                Mzamomtsha Primary School<br>
+                Copyright © 2020 All rights reserved<br>
+                Powered & Written By Dynamic Developers - Website builder
+                </strong>
+            </div>
+
+            <!--Address div in the middle.-->
+            <div class="address">
+                <strong>
+                49 Valangentambo Street<br>
+                Mfuleni, Cape Town 7100<br>
+                Phone: 021 901 0008
+                </strong>
+            </div>
+
+            <div class="left-big-div">
+                <!--Right-hand div box.-->
+                <div class="social-links">
+                    <a href="Main Page.html"><strong>Home</strong></a>
+                    <a href="About Us.html"><strong>About Us</strong></a>
+                    <a href="Events.html"><strong>Events</strong></a>
+                </div>
+                
+                <!--Facebook and Twitter contact links.-->
+                <div class="facebook-twitter-links">
+                    <a href="https://www.facebook.com/pages/Mzamomtsha-Primary-Driftsands/198964430601317"><img src="facebook.png" alt="Facebook Link" width="50px" height="25px"></a>
+                    <a href="https://www.facebook.com/pages/Mzamomtsha-Primary-Driftsands/198964430601317"><img src="twitter.png" alt="Twitter Link" width="50px" height="25px"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
